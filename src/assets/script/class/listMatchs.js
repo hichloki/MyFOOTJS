@@ -6,7 +6,6 @@ export class listeMatchs {
 
     constructor() {
         this.listMatchs = [];
-        this.matchstocker = null;
         this.fetchListMatch();
         this.addBtnMatch = document.querySelector('.AddMatch');
         this.addBtnMatch.addEventListener('click', () => {
@@ -20,7 +19,7 @@ export class listeMatchs {
     }
 
 
-    // Fonction pour afficher tous les matchs stcokés dans la bdd
+    // Fonction pour afficher tous les matchs stockés dans la bdd
     fetchListMatch() {
 
         const optionsGET =

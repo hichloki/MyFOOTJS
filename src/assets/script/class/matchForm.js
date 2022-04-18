@@ -27,6 +27,7 @@ export class MatchForm {
         })
     }
 
+    // ouverture de la modal
     open = (e) => {
 
         this.formD.style.display = "block"
@@ -40,6 +41,8 @@ export class MatchForm {
             this.stadeInput.value = this.matchstocker.stade;
         }
     }
+
+    //fermeture de la modal
 
     close = (event = null) => {
         if (event) {
@@ -55,7 +58,7 @@ export class MatchForm {
         this.stadeInput.value = "";
     };
 
-
+// fonction qui fetch l'envoie du formulaire pour le POST et le PUT 
 
     submitMatch(teamA, imgA, teamB, imgB, groupe, stade) {
         const objMatch = { teamA, imgA, teamB, imgB, groupe, stade }

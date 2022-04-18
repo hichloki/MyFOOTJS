@@ -37,7 +37,7 @@ app.get('/formulaire', (req, res) => {
 // Route pour le CRUD - READ
 app.get('/listMatch', (req, res) => {
     MatchModel.find({}).then((doc) => {
-        console.log("ok")
+
         res.send(doc);
     });
 });
@@ -45,9 +45,8 @@ app.get('/listMatch', (req, res) => {
 //CRUD - DELETE
 
 app.delete('/listMatch/delete', (req, res) => {
-    console.log(req.body)
+
     const id = req.body._id
-    console.log(id)
     MatchModel.findByIdAndRemove(id).exec();
     res.send('Supprimé !');
 });
