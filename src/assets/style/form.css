@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans Courier New', Courier, monospace;
+}
+
+
+#container {
+    background-image: url("../img/quatar.jpg");
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 86vh;
+    text-align: center;
+
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    background-color: rgb(37, 37, 37);
+    border: none;
+}
+
+.link>a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 30px;
+}
+
+.link {
+    margin-right: 45%;
+}
+
+span {
+    color: rgb(198, 58, 65);
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer {
+    width: 100vw;
+    height: 9vh;
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 35px;
+}
